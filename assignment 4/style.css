@@ -1,0 +1,79 @@
+.myPrimary
+{
+    color: #1837bf;
+}
+.myPrimaryBg
+{
+    background-color: #1837bf;
+}
+.mySecondary
+{
+    color: #90a4ae;
+}
+.mySecondaryBg
+{
+    background-color: #90a4ae;
+}
+.logo
+{
+    width: 180px;
+    height: 80px;
+}
+@media only screen and (max-width:400px)
+{
+    .logo
+    {
+        margin: auto;
+        width: 180px;
+        height: 80px;
+    }
+    .card
+    {
+        margin: 5% auto 5% auto;
+    }
+}
+@media only screen and (max-width:768px)
+{
+    .card
+    {
+        margin: 5% auto 5% auto;
+    }
+}
+.navbar
+{
+    background-color: #90a4ae !important;
+    /* color: black !important; */
+}
+.nav-link, .dropdown-item
+{
+    color: black !important;
+}
+.nav-link:hover, .dropdown-item:hover
+{
+    color: #1837bf !important;
+    font-weight: bold;
+    background-color: #90a4ae !important;
+}
+.dropdown-menu
+{
+    background-color: #90a4ae !important;
+}
+.disabled
+{
+    color: grey !important;
+}
+.card
+{
+    width: 17rem !important;
+    height: 30rem !important;
+}
+.card-img-top
+{
+    width: 250px !important;
+    height: 250px !important;
+    margin: auto;
+}
+.footer
+{
+    color: white;
+}
