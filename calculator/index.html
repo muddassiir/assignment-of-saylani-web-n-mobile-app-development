@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="cs/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col-sm-12 col-md-12">
+            <input id="result" style="font-size: 25px; font-weight:bold;" type="text" class="screen">
+        </div>
+        <div>
+            <button class="btn col-md-2 col-sm-4" onclick="clearResult()">CE</button>
+            <button class="btn col-md-2" onclick="clearResult()">C</button>
+            <button class="btn col-md-2" onclick="cutOff()"><svg class="bi bi-arrow-left-circle" width="1em"
+                    height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path fill-rule="evenodd"
+                        d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z" />
+                    <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z" />
+                </svg></button>
+            <button class="btn color col-md-3" onclick="getNumber('/')">&divide</button>
+        </div>
+        <div>
+            <button class="btn col-md-2" onclick="getNumber('7')">7</button>
+            <button class="btn col-md-2" onclick="getNumber('8')">8</button>
+            <button class="btn col-md-2" onclick="getNumber('9')">9</button>
+            <button class="btn color col-md-3" onclick="getNumber('*')">&times;</button>
+        </div>
+        <div>
+            <button class="btn col-md-2" onclick="getNumber('4')">4</button>
+            <button class="btn col-md-2" onclick="getNumber('5')">5</button>
+            <button class="btn col-md-2" onclick="getNumber('6')">6</button>
+            <button class="btn color col-md-3" onclick="getNumber('-')">&minus;</button>
+        </div>
+        <div>
+            <button class="btn col-md-2" onclick="getNumber('1')">1</button>
+            <button class="btn col-md-2" onclick="getNumber('2')">2</button>
+            <button class="btn col-md-2" onclick="getNumber('3')">3</button>
+            <button class="btn color col-md-3" onclick="getNumber('+')">&plus;</button>
+        </div>
+        <div class="mb-4">
+            <button class="btn col-md-2" onclick="getNumber('&plusmn;')">&plusmn;</button>
+            <button class="btn col-md-2" onclick="getNumber('0')">0</button>
+            <button class="btn col-md-2"  onclick="getNumber('.')">&period;</button>
+            <button class="btn color col-md-3" onclick="getResult()">&equals;</button>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
